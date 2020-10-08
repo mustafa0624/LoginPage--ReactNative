@@ -7,11 +7,11 @@ const Buttons = () => {
         <View>
 
             <TouchableOpacity style={styles1.myButton} >
-                <Text style={styles1.myButtonText}> denemesss</Text>
+                <Text style={styles1.myButtonText}> Giris Yap</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles1.myButton} >
-                <Text style={styles1.myButtonText}> denemesss</Text>
+                <Text style={styles1.myButtonText}> Kayit Ol</Text>
             </TouchableOpacity>
        
        

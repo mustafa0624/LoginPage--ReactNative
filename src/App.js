@@ -24,15 +24,22 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import Buttons from "./button"
+import Buttons from "./button";
+import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 const App = () => {
+  
   return (
     <SafeAreaView style={{flex:1}}>
       <View style={styles.container}>
-        {/* <Image source={require("")}/> */}
-        <TextInput style={styles.input} placeholder="E-posta Giriniz.." />
-        <TextInput style={styles.input} placeholder="Sifre Giriniz.." />
+        <Image source={require("./img/34627.png")}
+        style={styles.image}/>
+        <TextInput style={styles.input}
+        keyboardType="email-address"
+        placeholder="E-posta Giriniz.." />
+        <TextInput style={styles.input} 
+        keyboardType="phone-pad"
+        placeholder="Sifre Giriniz.." />
         
         
         <Buttons/>
@@ -68,7 +75,14 @@ const styles = StyleSheet.create({
     width:100,
     margin:100
 
+  },
+  image:{
+    alignSelf:"center",
+    width:120,height:120,
+    marginBottom:10
   }
+    
+    
     
 
 })
