@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
   image:{
     alignSelf:"center",
     width:120,height:120,
-    marginBottom:10
+    marginBottom:20
   }
     
     
