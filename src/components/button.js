@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, TouchableOpacity, Text, View, Button } from "react-native";
+import { StyleSheet, TouchableOpacity, Text, View, Button, Dimensions } from "react-native";
 
 
 const Buttons = () => {
@@ -35,7 +35,7 @@ const styles1 = StyleSheet.create({
         borderRadius: 10,
         alignItems: "center",
         justifyContent: "center",
-        width: 180,
+        width:Dimensions.get("window").width/2,
         height: 50,
         alignSelf: "center",
         marginTop:15

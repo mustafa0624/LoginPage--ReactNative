@@ -24,6 +24,7 @@ import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 const App = () => {
   
   return (
+
     <SafeAreaView style={{flex:1}}>
       <View style={styles.container}>
         <Image source={require("./img/34627.png")}
@@ -70,7 +71,8 @@ const styles = StyleSheet.create({
     width:Dimensions.get("window").width,
     height:Dimensions.get("window").height*0.30,
     
-    // marginBottom:20,
+    marginTop:-30,
+    marginBottom:20,
     // backgroundColor:"red",
     resizeMode:"contain",
     // tintColor:"green"
