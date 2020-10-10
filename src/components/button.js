@@ -48,4 +48,4 @@ const styles1 = StyleSheet.create({
 
 })
 
-export default Buttons;
+export {Buttons};

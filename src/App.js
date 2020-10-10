@@ -14,17 +14,11 @@ import {
   View,
   Text,
   StatusBar,
-  Image, TextInput, Button
+  Image, TextInput, Button,Dimensions
 } from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-import Buttons from "./button";
+import {Buttons,Input} from "./components"
+// import Buttons from "./components/button";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 const App = () => {
@@ -34,14 +28,9 @@ const App = () => {
       <View style={styles.container}>
         <Image source={require("./img/34627.png")}
         style={styles.image}/>
-        <TextInput style={styles.input}
-        keyboardType="email-address"
-        placeholder="E-posta Giriniz.." />
-        <TextInput style={styles.input} 
-        keyboardType="phone-pad"
-        placeholder="Sifre Giriniz.." />
+       
         
-        
+        <Input/>
         <Buttons/>
 
       </View>
@@ -77,9 +66,14 @@ const styles = StyleSheet.create({
 
   },
   image:{
-    alignSelf:"center",
-    width:120,height:120,
-    marginBottom:20
+    
+    width:Dimensions.get("window").width,
+    height:Dimensions.get("window").height*0.30,
+    
+    // marginBottom:20,
+    // backgroundColor:"red",
+    resizeMode:"contain",
+    // tintColor:"green"
   }
     
     
